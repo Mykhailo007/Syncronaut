@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "../include/file_operations.h"
 
 // Function to copy a file
 int copy_file(const char *src, const char *dest) {

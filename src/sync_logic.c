@@ -1,6 +1,6 @@
-#include "file_metadata.h" // Assuming this header includes 'FileMetadata' and 'collect_file_metadata'
-#include "file_operations.h" // Assuming this header includes 'copy_file' and 'delete_file'
-#include <stdio.h>
+#include "../include/file_metadata.h" 
+#include "../include/file_operations.h" 
+#include "../include/sync_logic.h"
 #include <stdlib.h>
 #include <string.h>
 #include <dirent.h>

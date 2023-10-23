@@ -3,12 +3,13 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <time.h>
+#include "../include/file_metadata.h"
 
 // Structure to hold file metadata
-typedef struct {
+typedef struct FileMetadata {
     off_t size;
     time_t last_modified;
-} FileMetadata;
+};
 
 // Function to collect file metadata
 FileMetadata collect_file_metadata(const char *file_path) {
@@ -42,9 +43,9 @@ void print_file_metadata(const FileMetadata *metadata) {
     printf("Last Modified: %s\n", buffer);
 }
 
-// For testing
-// int main() {
-//     FileMetadata metadata = collect_file_metadata("test.txt");
-//     print_file_metadata(&metadata);
-//     return 0;
-// }
+//For testing
+int main() {
+    FileMetadata metadata = collect_file_metadata("test.txt");
+    print_file_metadata(&metadata);
+    return 0;
+}
