@@ -1,4 +1,4 @@
-#include "file_metadata.h"
+//#include "file_metadata.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
@@ -43,7 +43,8 @@ void print_file_metadata(const FileMetadata *metadata) {
 }
 
 // For testing
-int main() {
-    FileMetadata metadata = collect_file_metadata("test.txt");
-    print_file_metadata(&metadata);
-    return
+// int main() {
+//     FileMetadata metadata = collect_file_metadata("test.txt");
+//     print_file_metadata(&metadata);
+//     return 0;
+// }
